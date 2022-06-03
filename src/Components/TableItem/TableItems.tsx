@@ -9,10 +9,11 @@ const TableItems = () => {
     const dispatch = useDispatch<AppDispatch>();
 
     const basket = useAppSelector((state) => state.details.details);
-    console.log(basket)
+    console.log("data====",basket)
 
    
     const ItemDetails = basket.map((item, index)=>
+    
        ( <TableItem
         key={index}
         id={item.id}
@@ -20,7 +21,7 @@ const TableItems = () => {
         name={item.name}
         additional={item.additional}
         country = {item.country}
-        code = {item.postalCode}
+        code = {item.code}
         street={item.street}
         />)
     )

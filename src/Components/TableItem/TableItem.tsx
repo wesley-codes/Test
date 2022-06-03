@@ -1,13 +1,12 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { TableItemProps } from '../../Types/Types'
+import { PersonDetail, TableItemProps } from '../../Types/Types'
 import { deleteItem } from '../Redux/RootReducer';
 import { AppDispatch } from '../Redux/Store';
 import DeleteIcon from '../SVG/DeleteSVG'
 
-const TableItem = ( {company, name, additional, street, code, country, id}:TableItemProps) => {
+const TableItem = ( {company, name, additional, street, code, country, id}:PersonDetail) => {
     const dispatch = useDispatch<AppDispatch>();
-console.log(id)
 const deleteRow = ()=>{
     dispatch(deleteItem(id))
 }

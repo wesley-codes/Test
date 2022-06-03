@@ -30,7 +30,7 @@ function App() {
       <div className="container">
         <table className="table">
           <tr className="heading">
-            <th>Icon</th>
+            <th></th>
 
             <th>Company</th>
             <th>Name</th>
@@ -48,20 +48,7 @@ function App() {
 
          <TableItems/>
 
-          <tr>
-            <td>Icon</td>
-            <td>Company</td>
-            <td>Name</td>
-            <td>Additional</td>
-            <td>Street</td>
-            <td>Postal</td>
-            <td>IBAN</td>
-            <td>BIC</td>
-            <td>Bank name</td>
-            <td>FAX</td>
-            <td>Email</td>
-            <td>Birthday</td>
-          </tr>
+        
         </table>
       </div>
 {active && <InvoiceAddress/>}

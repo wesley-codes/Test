@@ -58,7 +58,7 @@ export  type FormValue = {
     name: string
     additional: string
     street : string
-    postalCode : string
+    code : string
     country : string
   }
   
