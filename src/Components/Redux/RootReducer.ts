@@ -3,13 +3,7 @@ import { PersonDetail } from "../../Types/Types";
 
 const initialState = {
   details: <PersonDetail[]>[
-    {
-      id: 1,
-      company: "efrf3",
-      name: "wff3ffw",
-      additional: "rff3tf",
-      country: "rfftg",
-    },
+ 
   ],
   active: false,
 };

@@ -5,6 +5,7 @@ import { FormValue } from '../../Types/Types';
 import { addToBasket, closeModal } from '../Redux/RootReducer';
 import { RootState, AppDispatch } from '../Redux/Store';
 import Modal from './Modal';
+import "../../App.css"
 
 const InvoiceAddress = () => {
 
@@ -69,8 +70,10 @@ const InvoiceAddress = () => {
               <label>Postal code</label>
               <input className="input" {...register("code")} />
             </div>
-            <button className="btn">cancel</button>
+         <div className='btnBox'>
+         <button className="btn">cancel</button>
             <button type="submit" >Save</button>
+         </div>
           </form>
         </Modal>
       
